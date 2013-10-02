@@ -2,14 +2,14 @@
 # Make sure we have the necessary deps:
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
-   sudo apt-get install -y git vim
+   apt-get install -y git vim zsh
 elif [[ "$unamestr" == 'Darwin' ]]; then
-   brew install git vim
+   brew install git vim zsh
 fi
 
 # Install Prezto
 git clone --recursive https://github.com/murphyrandle/prezto.git "$HOME/.zprezto"
-zsh ./_zsh_bootstrap.sh
+zsh $(pwd)/_zsh_bootstrap.sh
 chsh -s /bin/zsh
 
 # Install iVim
