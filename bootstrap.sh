@@ -2,9 +2,9 @@
 # Make sure we have the necessary deps:
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
-   apt-get install -y git vim zsh
+   apt-get install -y git vim zsh ranger
 elif [[ "$unamestr" == 'Darwin' ]]; then
-   brew install git vim zsh
+   brew install git vim zsh ranger
 fi
 
 # Install Prezto
