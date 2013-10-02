@@ -6,4 +6,4 @@ A set of scripts to facilitate the setup, update, and pushing of my development 
 # Usage
 
 Automatic installation:
-`curl -L https://raw.github.com/murphyrandle/toolbelt/master/bootstrap.sh | bash`
+`curl -L https://raw.github.com/murphyrandle/toolbelt/master/bootstrap.sh | sudo bash`
