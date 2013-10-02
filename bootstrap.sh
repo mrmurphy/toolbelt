@@ -9,7 +9,7 @@ fi
 
 # Install Prezto
 git clone --recursive https://github.com/murphyrandle/prezto.git "$HOME/.zprezto"
-zsh $(pwd)/_zsh_bootstrap.sh
+curl -L https://raw.github.com/murphyrandle/toolbelt/master/_zsh_bootstrap.sh | zsh
 chsh -s /bin/zsh
 
 # Install iVim
